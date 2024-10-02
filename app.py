@@ -26,7 +26,7 @@ def process_image(upload, name, col1, col2, col3, col4):
 
 def member_page(name):
     st.write(f"### {name}'s page")
-    st.write(f":dog: **{name}**")
+    st.write(f"**{name}**")
 
     my_upload = st.sidebar.file_uploader("Image Upload", type=["png", "jpg", "jpeg"], key=name)
 
@@ -47,7 +47,7 @@ st.sidebar.write("## Sidebar")
 
 menu = st.sidebar.radio(
     "Choose the menu",
-    ("main page", "team member_radio", "team member_selectbox")
+    ("main page", "Result")
 )
 
 if menu == "main page":
@@ -116,16 +116,16 @@ if menu == "main page":
         """
     )
 
-elif menu == "team member_radio":
-    team_member = st.sidebar.radio(
-        "Members",
-        ("강대홍", "송윤주", "이나림", "이다연", "허은재")
-    )
-    member_page(team_member)
+# elif menu == "team member_radio":
+#     team_member = st.sidebar.radio(
+#         "Members",
+#         ("Team1", "강대홍", "송윤주", "이나림", "이다연", "허은재")
+#     )
+#     member_page(team_member)
 
-elif menu == "team member_selectbox":
+elif menu == "Result":
     team_member = st.sidebar.selectbox(
         "Members",
-        ("강대홍", "송윤주", "이나림", "이다연", "허은재")
+        ("Team1", "강대홍", "송윤주", "이나림", "이다연", "허은재")
     )
     member_page(team_member)
