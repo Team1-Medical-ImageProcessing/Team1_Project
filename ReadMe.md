@@ -7,4 +7,8 @@
 
 ```bash
 streamlit run app.py
+```
 
+## 배포된 앱
+
+[여기](https://team1-medical-imageprocessing-team1-project-app-7wlpa0.streamlit.app/)를 클릭하여 배포된 Streamlit 앱에 접속할 수 있습니다.
